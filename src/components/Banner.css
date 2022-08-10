@@ -1,0 +1,75 @@
+.banner__wrapper{
+    background-color: #fafbfb;
+    background-image: url("../../public/images/bg-intro-desktop.svg");
+    background-size: 1300px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: 46rem;
+    overflow: hidden;
+}
+
+.banner__content{
+    margin-top: 8%;
+    margin-left: 10%;
+    width: 30%;
+}
+
+.banner__heading{
+    font-weight: 300;
+    font-size: 60px;
+}
+
+.banner__para{
+    padding-top: 20px;
+    font-size: 18px;
+    color: #c9c8ce;
+}
+
+.banner__button{
+    padding: 15px 20px;
+    width: 30%;
+    background-image: linear-gradient(to right, #31d166, #2cb8d2);
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.banner__button:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to right, #85e0ac, #7ed4e5);
+}
+
+@media(max-width: 376px){
+    .banner__wrapper{
+        padding-top: 40px;
+        width: 95%;
+        margin: auto;
+        height: 300px; 
+    }
+    .banner__content{
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .banner__heading{
+        font-size: 40px;
+    }
+    
+    .banner__button {
+        width: 40%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .mobile{
+        background-image: url("../../public/images/bg-intro-desktop.svg");
+        background-size: 800px;
+        height: 350px;
+        background-repeat: no-repeat;
+        background-position: -11rem;
+        overflow: hidden;
+    }
+}

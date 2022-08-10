@@ -1,0 +1,86 @@
+.footer__width__limiter{
+    background-color: hsl(233, 26%, 24%);
+}
+
+.footer__wrapper{
+    margin: auto;
+    width: 80%;
+    color: #a2a5ae;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 40px 0px;
+}
+
+.footer__invite__button {
+    padding: 15px 20px;
+    width: 30%;
+    background-image: linear-gradient(to right, #31d166, #2cb8d2);
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.footer__invite__button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to right, #85e0ac, #7ed4e5);
+}
+
+.footer__icons{
+    padding-top: 40px;
+}
+
+.footer__icon{
+    padding-right: 10px;
+    color: white;
+}
+
+.footer__icon:hover{
+    cursor: pointer;
+    color: #2ac78b;
+}
+
+.footer__options{
+    padding-top: 10px;
+}
+
+.footer__options:hover{
+    cursor: pointer;
+    color: #2ac78b;
+}
+
+.footer__fourth{
+    text-align: right;
+}
+
+.footer__logo{
+    padding-top: 10px;
+}
+
+@media(max-width: 376px){
+    .footer__wrapper{
+        grid-template-columns: auto;
+        text-align: center;
+    }
+
+    .footer__invite__button{
+        margin: auto;
+        width: 40%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer__fourth{
+        text-align: center;
+    }
+    
+    .footer__copyright{
+        padding-top: 10px;
+    }
+
+    .footer__icons{
+        padding-top: 30px;
+        margin-bottom: 20px;
+    }
+}

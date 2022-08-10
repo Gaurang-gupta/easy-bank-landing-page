@@ -1,0 +1,48 @@
+.features__wrapper{
+    background-color: #f5f5f6;
+}
+
+.features__main{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.features__heading{
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.features__para{
+    font-size: 18px;
+    color: #c9c8ce;
+}
+
+.features__cards{
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 60px;
+}
+
+.card__heading{
+    padding-top: 30px;
+    font-weight: 300;
+}
+
+.card__para{
+    color: #c9c8ce;
+}
+
+@media(max-width: 376px){
+    .features__cards{
+        grid-template-columns: auto;
+        row-gap: 70px;
+    }
+
+    .features__main{
+        text-align: center;
+    }
+}
