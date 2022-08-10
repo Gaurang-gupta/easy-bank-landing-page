@@ -12,8 +12,8 @@ const Navbar = () => {
             <div className='wrapper'>
                 <div className='logo'>
                     <img src="./images/logo.svg" alt="logo" />
-                    <img className={`hamburg ${!hidden && "hidden"}`} onClick={setHidden} src="./images/icon-hamburger.svg" alt="ham" />
-                    <img onClick={setHidden} className={`hamburg ${hidden && "hidden"}`} src="./images/icon-close.svg" />
+                    <img className={`hamburg ${!hidden ? "hidden" : "active"}`} onClick={setHidden} src="./images/icon-hamburger.svg" alt="ham" />
+                    <img onClick={setHidden} className={`hamburg ${hidden ? "hidden" : "active"}`} src="./images/icon-close.svg" />
                 </div>
 
                 <div className={`options__container ${hidden && "hidden"}`}>

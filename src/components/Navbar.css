@@ -6,7 +6,7 @@
 }
 
 .hamburg{
-    display: inherit;
+    display: none;
 }
 
 .wrapper{
@@ -79,6 +79,10 @@
 
     .hidden{
         display: none !important;
+    }
+
+    .active{
+        display: inline;
     }
 
     .wrapper{
