@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import "./Navbar.css"
 
 const Navbar = () => {
@@ -12,7 +12,8 @@ const Navbar = () => {
             <div className='wrapper'>
                 <div className='logo'>
                     <img src="./images/logo.svg" alt="logo" />
-                    <img className='hamburg' onClick={setHidden} src="./images/icon-hamburger.svg" alt="ham" />
+                    <img className={`hamburg ${!hidden && "hidden"}`} onClick={setHidden} src="./images/icon-hamburger.svg" alt="ham" />
+                    <img onClick={setHidden} className={`hamburg ${hidden && "hidden"}`} src="./images/icon-close.svg" />
                 </div>
 
                 <div className={`options__container ${hidden && "hidden"}`}>
